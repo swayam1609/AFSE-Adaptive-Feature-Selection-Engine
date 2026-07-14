@@ -16,7 +16,7 @@ from dataclasses import dataclass
 import numpy as np
 import pandas as pd
 
-from dataset import DatasetProfile, profile_dataset
+from profiler import DatasetProfile, profile_dataset
 from loss import AdaptiveWeights, compute_weights, component_scores, final_score
 
 warnings.filterwarnings("ignore", category=FutureWarning)
@@ -129,9 +129,11 @@ if __name__ == "__main__":
 
     bundle = load_dataset("breast_cancer")
     model = AFSEModel().fit(bundle.X, bundle.y, name=bundle.name)
+
     print(model.weights_.pretty_print())
     print("\nTop 10% features:", model.select(0.10))
     print()
+
     for exp in model.explain(top_n=3):
         print(exp.pretty_print())
         print()

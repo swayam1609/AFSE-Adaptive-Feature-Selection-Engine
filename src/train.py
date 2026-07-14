@@ -72,9 +72,11 @@ if __name__ == "__main__":
     from model import AFSEModel
 
     bundle = load_dataset("breast_cancer")
+
     afse = AFSEModel().fit(bundle.X, bundle.y, name=bundle.name)
     features = afse.select(0.10)
 
     run = train_on_subset(bundle.X, bundle.y, features, method="AFSE")
+
     for tm in run.trained_models:
         print(f"{tm.name:<20} runtime={tm.runtime_sec:.4f}s  peak_mem={tm.peak_memory_kb:.1f}KB")

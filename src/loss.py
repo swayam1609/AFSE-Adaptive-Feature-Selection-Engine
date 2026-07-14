@@ -29,7 +29,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
 
-from dataset import DatasetProfile
+from profiler import DatasetProfile
 
 warnings.filterwarnings("ignore", category=FutureWarning)
 warnings.filterwarnings("ignore", category=UserWarning)
@@ -163,10 +163,12 @@ def final_score(components: pd.DataFrame, weights: AdaptiveWeights, X: pd.DataFr
 
 
 if __name__ == "__main__":
-    from dataset import load_dataset, profile_dataset
+    from dataset import load_dataset
+    from profiler import profile_dataset
 
     bundle = load_dataset("breast_cancer")
     profile = profile_dataset(bundle.X, bundle.y, bundle.name)
+    
     weights = compute_weights(profile)
     print(weights.pretty_print())
 
