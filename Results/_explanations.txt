@@ -1,0 +1,90 @@
+Feature    : worst area
+Importance : 0.824
+Reason:
+  - High Mutual Information (0.98)
+  - High Random Forest importance (0.89)
+  - High LASSO coefficient magnitude (1.00)
+  - High redundancy with other top features (1.00 penalty applied)
+  - Selected in 100% of repeated cross-validation runs (stable)
+
+Feature    : worst radius
+Importance : 0.429
+Reason:
+  - High Mutual Information (0.96)
+  - Moderate Random Forest importance (0.52)
+  - Moderate LASSO coefficient magnitude (0.60)
+  - Moderate redundancy with other top features (0.54 penalty applied)
+  - Selected in 72% of repeated cross-validation runs (stable)
+
+Feature    : worst concave points
+Importance : 0.416
+Reason:
+  - High Mutual Information (0.92)
+  - High Random Forest importance (0.83)
+  - Moderate LASSO coefficient magnitude (0.41)
+  - Moderate redundancy with other top features (0.59 penalty applied)
+  - Selected in 80% of repeated cross-validation runs (stable)
+
+Feature    : mean concave points
+Importance : 0.367
+Reason:
+  - High Mutual Information (0.93)
+  - High Random Forest importance (0.71)
+  - Low LASSO coefficient magnitude (0.32)
+  - Moderate redundancy with other top features (0.54 penalty applied)
+  - Selected in 12% of repeated cross-validation runs (unstable)
+
+Feature    : worst perimeter
+Importance : 0.350
+Reason:
+  - High Mutual Information (1.00)
+  - High Random Forest importance (1.00)
+  - Low LASSO coefficient magnitude (0.00)
+  - Moderate redundancy with other top features (0.45 penalty applied)
+  - Selected in 36% of repeated cross-validation runs (unstable)
+
+Feature    : radius error
+Importance : 0.308
+Reason:
+  - Moderate Mutual Information (0.53)
+  - Low Random Forest importance (0.06)
+  - High LASSO coefficient magnitude (0.70)
+  - Moderate redundancy with other top features (0.34 penalty applied)
+  - Selected in 0% of repeated cross-validation runs (unstable)
+
+Feature    : mean area
+Importance : 0.277
+Reason:
+  - High Mutual Information (0.76)
+  - Moderate Random Forest importance (0.36)
+  - Low LASSO coefficient magnitude (0.00)
+  - Low redundancy with other top features (0.32 penalty applied)
+  - Selected in 0% of repeated cross-validation runs (unstable)
+
+Feature    : worst concavity
+Importance : 0.233
+Reason:
+  - High Mutual Information (0.67)
+  - Low Random Forest importance (0.25)
+  - Low LASSO coefficient magnitude (0.26)
+  - Low redundancy with other top features (0.31 penalty applied)
+  - Selected in 0% of repeated cross-validation runs (unstable)
+
+Feature    : mean perimeter
+Importance : 0.212
+Reason:
+  - High Mutual Information (0.85)
+  - Moderate Random Forest importance (0.35)
+  - Low LASSO coefficient magnitude (0.00)
+  - Low redundancy with other top features (0.26 penalty applied)
+  - Selected in 0% of repeated cross-validation runs (unstable)
+
+Feature    : worst texture
+Importance : 0.194
+Reason:
+  - Low Mutual Information (0.26)
+  - Low Random Forest importance (0.09)
+  - Moderate LASSO coefficient magnitude (0.41)
+  - Low redundancy with other top features (0.11 penalty applied)
+  - Selected in 0% of repeated cross-validation runs (unstable)
+
